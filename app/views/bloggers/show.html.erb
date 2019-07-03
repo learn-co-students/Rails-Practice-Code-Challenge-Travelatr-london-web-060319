@@ -1,0 +1,7 @@
+<h1>Blogger <%= @blogger.name %>, Total likes: <%= @blogger.total_likes %></h1>
+<h2>Featured Post: <%= @blogger.most_liked == nil ? "no likes" : @blogger.most_liked.title %></h2>
+
+<h3>Top 5:</h3>
+<% @blogger.top_five.each do |dest| %>
+    <%= dest.first %><br>
+<%end %>

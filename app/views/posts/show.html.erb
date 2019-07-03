@@ -1,0 +1,6 @@
+<h1><%= @post.title %> posted by: <%= link_to @post.blogger.name, blogger_path(@post.blogger) %> for <%= link_to @post.destination.name, destination_path(@post.destination) %></h1>
+<h2><%= @post.content %></h2>
+<%= form_for @post, url: add_path(@post), method: 'PATCH' do |f|%>
+    <%= f.label :likes, @post.likes %>
+    <%= f.submit "Add Like" %>
+<% end %>

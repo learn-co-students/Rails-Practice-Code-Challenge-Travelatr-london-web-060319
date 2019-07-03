@@ -1,0 +1,9 @@
+<h1> All Posts </h1>
+<%= link_to "Create new Post", new_post_path %>
+
+<br>
+<% @posts.each do |post|%>
+<h2> <%= link_to post.title, post %> </h2>
+<p> <%= link_to post.blogger.name, blogger_path(post.blogger) %> </p>
+<p> <%= link_to post.destination.name, destination_path(post.destination) %> </p>
+<% end %>

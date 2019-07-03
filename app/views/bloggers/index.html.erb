@@ -1,0 +1,13 @@
+<h1>All Bloggers</h1>
+<br>
+<%@bloggers.each do |hack_fraud|%>
+
+<ul>
+<h3><%=link_to(hack_fraud.name, hack_fraud)%></h3> </th>
+
+<li><b>Age: </b> <%=hack_fraud.age%></li>
+<li><b>Bio: </b> <%=hack_fraud.bio%></li>
+<hr>
+</ul>
+<%= %>
+<%end%>

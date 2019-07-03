@@ -1,0 +1,13 @@
+<h1>All Destinations</h1>
+<br>
+<%@destinations.each do |destination|%>
+
+<ul>
+<h3><%=link_to(destination.name, destination)%></h3> </th>
+
+<li><b>Name: </b> <%=destination.name%></li>
+<li><b>Country: </b> <%=destination.country%></li>
+<hr>
+</ul>
+<%= %>
+<%end%>

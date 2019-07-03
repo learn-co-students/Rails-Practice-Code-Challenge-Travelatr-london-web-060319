@@ -1,0 +1,9 @@
+<h1>All Posts</h1>
+<br>
+<%@posts.each do |post|%>
+<ul>
+<h3><%=link_to(post.title, post)%></h3> </th>
+<b>Author: </b><%=post.blogger.name%>
+<hr>
+</ul>
+<%end%>

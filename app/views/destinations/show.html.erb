@@ -1,11 +1,7 @@
 <h1><%=@destination.name%></h1>
 
-<h3>Name:</h3>
-<p><%=@destination.name%></p>
-<br>
 <h3>Country:</h3>
 <p><%=@destination.country%></p>
-<br>
 <p>Featured Post: <%=link_to(@destination.most_liked_post.title, @destination.most_liked_post) %></p>
 <p>Average Blogger Age: <%=@destination.average_blogger_age%></p>
 

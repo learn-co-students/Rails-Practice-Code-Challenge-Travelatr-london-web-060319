@@ -5,6 +5,10 @@ class Post < ApplicationRecord
     validates :title, presence: true
 
     def like_the_post
-        self.likes+=1
+        if self.likes.nil?
+            self.likes = 1
+        else
+            self.likes+=1
+        end
     end
 end

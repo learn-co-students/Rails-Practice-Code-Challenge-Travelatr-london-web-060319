@@ -29,7 +29,7 @@ class PostsController < ApplicationController
 
     private
     def post_params
-        params.require(:post).permit(:blogger_id, :destination_id,:title, :content)
+        params.require(:post).permit(:blogger_id, :destination_id,  :title, :content, :likes)
     end
 
 end

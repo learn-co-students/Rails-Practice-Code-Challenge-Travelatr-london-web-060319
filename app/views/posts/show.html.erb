@@ -1,0 +1,13 @@
+<h1><%=@post.title%></h1>
+<p>By: <em><%=link_to(@post.blogger.name, @post.blogger)%></em> || About: <em><%=link_to(@post.destination.name, @post.destination)%></em></p>
+
+
+<p>Likes: <%=@post.likes%></p>
+<br>
+<br>
+<p><%=@post.content%></p>
+<br>
+<br>
+<%=form_for(@post) do |f|%>
+<%=f.submit "Like :)"%>
+<%end%>

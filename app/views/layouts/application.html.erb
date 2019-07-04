@@ -9,6 +9,18 @@
   </head>
 
   <body>
+    <%=link_to("All Posts", posts_path)%>
+    <%=link_to("All Destinations", destinations_path)%>
+    <%=link_to("All Bloggers", bloggers_path)%>
+    <%=link_to("New Post", new_post_path)%>
+
     <%= yield %>
+    <br><br>
+    
+    <%=link_to("All Posts", posts_path)%>
+    <%=link_to("All Destinations", destinations_path)%>
+    <%=link_to("All Bloggers", bloggers_path)%>
+    <%=link_to("New Post", new_post_path)%>
+
   </body>
 </html>
